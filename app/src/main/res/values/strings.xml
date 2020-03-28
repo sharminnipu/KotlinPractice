@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KotlinPractice</string>
+    <string name="click_button">Click Me</string>
+    <string name="toastMsg">Toast Message</string>
+    <string name="name">enter your name</string>
+
+</resources>
