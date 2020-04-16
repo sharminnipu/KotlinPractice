@@ -14,7 +14,7 @@ class ResultActivity : AppCompatActivity() {
 
         val intentObject:Intent=intent
 
-        val name=intentObject.getStringExtra("name")
+        val name=intentObject.getStringExtra(MainActivity.KEY_NAME)
 
         textView.text="Hey, $name"
 
