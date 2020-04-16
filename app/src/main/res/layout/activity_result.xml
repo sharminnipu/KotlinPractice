@@ -18,16 +18,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2" />
 
-    <Button
-        android:id="@+id/buttonToshareApp"
-        android:layout_width="267dp"
-        android:layout_height="55dp"
-        android:text="share Text"
-        android:textSize="20sp"
-        android:textColor="@color/colorAccent"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

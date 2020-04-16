@@ -14,6 +14,10 @@ import java.nio.channels.InterruptibleChannel
 class MainActivity : AppCompatActivity(),View.OnClickListener {
 
 
+    companion object{
+        const val KEY_NAME="name"
+    }
+
     lateinit var editTextName: EditText
     lateinit var buttonClick: Button
     lateinit var buttonIntroduce: Button
@@ -86,10 +90,11 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             }
             R.id.btnNext->{
 
-                val intent: Intent = Intent(this,ResultActivity::class.java)
-                val name=editTextName.text.toString()
-                intent.putExtra("name",name)
-                startActivity(intent)
+              //  val name=editTextName.text.toString()
+
+                startActivity( Intent(this,ResultActivity::class.java).putExtra(KEY_NAME,Hero("Nipu","Sharmin")))
+
+
             }
 
 

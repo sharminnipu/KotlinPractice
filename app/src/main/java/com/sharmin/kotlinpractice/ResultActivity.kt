@@ -12,29 +12,13 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
 
-        val intentObject:Intent=intent
 
-        val name=intentObject.getStringExtra("name")
+        val hero=intent.getSerializableExtra(MainActivity.KEY_NAME) as Hero
 
-        textView.text="Hey, $name"
 
-        //another intent pass//
+        textView.text="Name is:" +hero.name +  " and  Real Name is :"+ hero.realName
 
-        /*  val bundle:Bundle?=intent.extras
-          val msg=bundle!!.getString("name")
-         textView.text="Hey, $name"
 
-       */
-
-        buttonToshareApp.setOnClickListener {
-
-            val intent=Intent()
-            intent.action=Intent.ACTION_SEND
-            intent.putExtra(Intent.EXTRA_TEXT,name)
-            intent.type= "text/plain"
-
-            startActivity(Intent.createChooser(intent,"Share To : "))
-        }
 
 
     }
